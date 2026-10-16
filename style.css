@@ -1,0 +1,20 @@
+/* Ajustes Finos e Animações para o Simulador APM 4.0 */
+
+input[type="range"] {
+  cursor: pointer;
+}
+
+/* Transição suave para alteração dos estados operacionais */
+#badgeStatus, #diagEstado {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Animação personalizada para alerta visual */
+@keyframes pulseFast {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse-fast {
+  animation: pulseFast 1s infinite;
+}
